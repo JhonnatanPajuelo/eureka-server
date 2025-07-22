@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  eureka-server:
+    image: eureka-image:v1
+    container_name: eureka
+    ports:
+      - "1010:1010"
+    networks:
+      - micro-net
+
+networks:
+  micro-net:
+    driver: bridge
