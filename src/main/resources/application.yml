@@ -1,8 +1,10 @@
 server:
-  port: 1010
+  port: 8761
+
 spring:
   application:
     name: eureka-server
+
 eureka:
   client:
     register-with-eureka: false
